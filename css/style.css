@@ -17,7 +17,7 @@
     --font-weight-bold: 700;
 
     /*Screen*/
-    --max-width: 1240px;
+    --max-width: 1100px;
     --min-width: 375px;
 }
 
@@ -35,7 +35,7 @@ body {
     font-family: var(--font-family);
     font-size: var(--font-size);
     font-weight: var(--font-weight);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
@@ -78,8 +78,9 @@ body {
 
 /**********************  header  ***********************/
 .header-page {
-    height: calc(100vh - 150px);
+    height: 70vh;
     position: relative;
+    margin-bottom: 90px;
 }
 
 .header-page > nav {
@@ -136,11 +137,11 @@ body {
     font-weight: var(--font-weight-bold);
     line-height: 80px;
     color: var(--Very-dark-violent);
-    width: 600px;
+    width: 500px;
 }
 
 .header-page > p {
-    width: 600px;
+    width: 500px;
     line-height: 30px;
     color: var(--Grayish-violent);
 }
@@ -154,6 +155,37 @@ body {
 .header-page > img {
     position: absolute;
     top: 140px;
-    left: 650px;
+    left: 520px;
+}
+/*******************************************************/
+/*************************    **************************/
+.shortly-input {
+    width: 100%;
+    height: 150px;
+    background-color: var(--Dark-violent);
+    border-radius: 15px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.shortly-input > div {
+    width: 85%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 100%;
+    gap: 25px;
+}
+
+:is(.shortly-input > div > input, .shortly-input > div > button) {
+    border-radius: 10px;
+    border: none;
+    font-weight: var(--font-weight-bold);
+    font-size: 100%;
+}
+
+.shortly-input > div > input {
+    padding-left: 20px;
 }
 /*******************************************************/
