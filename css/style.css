@@ -28,10 +28,9 @@
 }
 
 body {
-    background-color: #fdfdfd;
+    background-color: #f0f0f0;
     min-width: 100vw;
     min-height: 100vh;
-    max-height: auto;
     font-family: var(--font-family);
     font-size: var(--font-size);
     font-weight: var(--font-weight);
@@ -51,7 +50,7 @@ body {
     font-weight: var(--font-weight-bold);
     text-decoration: none;
     display: inline-block;
-    padding: 7px 20px;
+    padding: 10px 22px;
     border-radius: 25px;
     transition: background .5s, color .5s;
 }
@@ -78,9 +77,8 @@ body {
 
 /**********************  header  ***********************/
 .header-page {
-    height: 70vh;
     position: relative;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
 }
 
 .header-page > nav {
@@ -158,11 +156,15 @@ body {
     left: 520px;
 }
 /*******************************************************/
-/*************************    **************************/
+/**********************  input  ************************/
 .shortly-input {
     width: 100%;
     height: 150px;
     background-color: var(--Dark-violent);
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 15px;
     display: grid;
     align-content: center;
@@ -170,12 +172,12 @@ body {
 }
 
 .shortly-input > div {
-    width: 85%;
+    width: 90%;
     height: 60px;
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 100%;
-    gap: 25px;
+    gap: 15px;
 }
 
 :is(.shortly-input > div > input, .shortly-input > div > button) {
@@ -187,5 +189,35 @@ body {
 
 .shortly-input > div > input {
     padding-left: 20px;
+}
+/*******************************************************/
+/***********************  rep  *************************/
+.shortly-rep {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 60% 25% 15%;
+    grid-template-rows: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#link {
+    font-size: 110%;
+    margin: auto 0;
+    margin-left: 55px;
+}
+
+#rep {
+    font-size: 110%;
+    margin: auto 0;
+    color: var(--Cyan);
+}
+
+.shortly-rep > div {
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px;
+    
 }
 /*******************************************************/
